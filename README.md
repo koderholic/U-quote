@@ -1,10 +1,13 @@
 # quote
 
-> A simple test project, creating a quoting application, where qoutes can easily be created, updated and deleted
+> A simple quoting application built on Vuejs, where favourite qoutes can easily be stored, updated and deleted
 
 ## Build Setup
 
 ``` bash
+# clone repository
+git clone 
+
 # install dependencies
 npm install
 
@@ -13,6 +16,5 @@ npm run dev
 
 # build for production with minification
 npm run build
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+No routing functionality, just basic component operations
