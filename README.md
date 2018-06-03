@@ -6,7 +6,7 @@
 
 ``` bash
 # clone repository
-git clone 
+git clone https://github.com/weboluchi/U-quote.git
 
 # install dependencies
 npm install
