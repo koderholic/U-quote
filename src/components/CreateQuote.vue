@@ -32,6 +32,11 @@ export default {
         quoteCount: 0
     }
   },
+  created() {
+    eventBox.$on('quoteRemoved', (quoteCount) => {
+      this.quoteCount = quoteCount
+    })
+  },
   methods: {
     onSubmit (evt) {
       evt.preventDefault();

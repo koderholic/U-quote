@@ -9,9 +9,10 @@
                     :footer="'Date : '+theQuote.date"
                     style="width:100%; max-width: 100%; margin-top: 10px;"
                     v-for="(theQuote,index) in quotes" :key="theQuote.length"
-                    @click='deleteQuote(index)'>
+                    >
             <p class="card-text">{{theQuote.quote}}</p>
-            </b-card>ic
+            <b-button variant="danger" @click='deleteQuote(index)' block>delete Quote</b-button>
+            </b-card>
         </b-card-group>
 
         <b-modal ref="quotedeleted" title="Quote deleted!" text-variant='danger'>
@@ -41,12 +42,13 @@ export default {
         })
     },
     methods: {
+        // Deletes a quote from the array uses the index
         deleteQuote (index) {
            this.$refs.quotedeleted.show()
            this.quotes.splice(index,1) 
            let showQuote = (this.quotes.length > 0)? false : true
            this.$emit('quoteRemoved',showQuote)
-           eventBox.quoteCount((this.quotes.length))
+           eventBox.quoteDeleted((this.quotes.length))
         }
     }
 }

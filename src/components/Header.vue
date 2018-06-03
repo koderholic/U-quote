@@ -22,8 +22,7 @@ export default {
     eventBox.$on('quoteRemoved', (quoteCount) => {
       this.counter = quoteCount
     })
-  },
-  methods: {
+    
   }
 }
 </script>
