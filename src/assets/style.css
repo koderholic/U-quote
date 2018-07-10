@@ -1,0 +1,37 @@
+.tw {
+  color: #ffffffcf;
+}
+
+.btn-w {
+  background: #2f0743!important;
+  border-color: #FFF!important;
+}
+.card-header{
+
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+.border-primary {
+   border-color: #FFF!important;
+}
+
+.tred {
+  background : #E22!important;
+  color:  #ffffffcf!important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  color: #ffffffcf;
+  opacity: .5;
+}
+
+@media only screen and (max-width: 1441px) {
+  .bg-pattern {
+    height: 100vh;
+  }
+}

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>U-quote</h2>
+    <h2 class="tw">U-quote</h2>
     <b-progress :value="counter" :max="max" show-progress animated></b-progress>
   </div>
 </template>

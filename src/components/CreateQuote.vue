@@ -5,13 +5,13 @@
       <b-form-textarea id="textarea1"
                      v-model="quote"
                      placeholder="Enter a new quote"
-                     :rows="8"
-                     :max-rows="12"
+                     :rows="12"
+                     :max-rows="15"
                      :col="8"
                      class="mt-3"
-                     required>          
+                     required>
     </b-form-textarea>
-      <b-button type="submit" variant="primary" block>Submit</b-button>
+      <b-button type="submit" block class="btn-w" style="margin-top: 10px; padding: 10px">Submit</b-button>
     </b-form>
 
     <b-modal ref="maxQuote" title="Maximum Reached!">
@@ -43,7 +43,7 @@ export default {
       }
       // Date of quote
       let today = new Date()
-      let dd = (today.getDate() < 10) ? '0'+today.getDate() : today.getDate() 
+      let dd = (today.getDate() < 10) ? '0'+today.getDate() : today.getDate()
       let mm = (today.getMonth() < 10) ? '0'+(today.getMonth()+1) : today.getMonth()+1
       let yy = today.getFullYear()
       let quoteDate = dd+'-'+mm+'-'+yy
